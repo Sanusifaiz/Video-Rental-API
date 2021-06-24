@@ -1,8 +1,8 @@
-package com.learningjava.expensetrackerapi.services;
+package com.learningjava.VideoRentalApi.services;
 
-import com.learningjava.expensetrackerapi.entity.User;
-import com.learningjava.expensetrackerapi.exceptions.EtAuthException;
-import com.learningjava.expensetrackerapi.repositories.UserRepository;
+import com.learningjava.VideoRentalApi.entity.User;
+import com.learningjava.VideoRentalApi.exceptions.EtAuthException;
+import com.learningjava.VideoRentalApi.repositories.UserRepository;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

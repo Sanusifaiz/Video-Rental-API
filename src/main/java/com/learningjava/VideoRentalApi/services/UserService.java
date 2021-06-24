@@ -1,7 +1,7 @@
-package com.learningjava.expensetrackerapi.services;
+package com.learningjava.VideoRentalApi.services;
 
-import com.learningjava.expensetrackerapi.entity.User;
-import com.learningjava.expensetrackerapi.exceptions.EtAuthException;
+import com.learningjava.VideoRentalApi.entity.User;
+import com.learningjava.VideoRentalApi.exceptions.EtAuthException;
 
 import java.util.Optional;
 

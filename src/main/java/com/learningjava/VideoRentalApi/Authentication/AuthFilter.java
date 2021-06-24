@@ -1,6 +1,6 @@
-package com.learningjava.expensetrackerapi.Authentication;
+package com.learningjava.VideoRentalApi.Authentication;
 
-import com.learningjava.expensetrackerapi.Constants;
+import com.learningjava.VideoRentalApi.Constants;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import org.springframework.http.HttpStatus;
@@ -13,7 +13,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.http.HttpResponse;
 
 public class AuthFilter extends GenericFilterBean {
 
@@ -24,7 +23,7 @@ public class AuthFilter extends GenericFilterBean {
         HttpServletRequest httpRequest = (HttpServletRequest)  servletRequest;
         HttpServletResponse httpResponse = (HttpServletResponse) servletResponse;
 
-        String authHeader = httpRequest.getHeader("Authorisation");
+        String authHeader = httpRequest.getHeader("Authorization");
         if(authHeader != null) {
             String[] authHeaderArr = authHeader.split("Bearer");
             if(authHeaderArr.length >1 && authHeaderArr[1] != null) {

@@ -1,4 +1,4 @@
-package com.learningjava.expensetrackerapi;
+package com.learningjava.VideoRentalApi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

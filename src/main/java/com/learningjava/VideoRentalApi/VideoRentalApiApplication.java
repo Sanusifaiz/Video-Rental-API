@@ -7,18 +7,18 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class ExpenseTrackerApiApplication {
+public class VideoRentalApiApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(ExpenseTrackerApiApplication.class, args);}
+		SpringApplication.run(VideoRentalApiApplication.class, args);}
 
 		@Bean
 		public FilterRegistrationBean<AuthFilter> filterFilterRegistrationBean() {
 			FilterRegistrationBean<AuthFilter> registrationBean = new FilterRegistrationBean<>();
 			AuthFilter authFilter = new AuthFilter();
 			registrationBean.setFilter(authFilter);
-			registrationBean.addUrlPatterns("/api/categories/*","/api/transactions/*");
+			registrationBean.addUrlPatterns("/api/categories/*","/api/transactions/*","/api/videos/*");
 			return registrationBean;
 		}
 

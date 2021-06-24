@@ -1,4 +1,4 @@
-package com.learningjava.expensetrackerapi.exceptions;
+package com.learningjava.VideoRentalApi.exceptions;
 
 
 import org.springframework.http.HttpStatus;

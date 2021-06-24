@@ -1,18 +1,13 @@
-package com.learningjava.expensetrackerapi;
+package com.learningjava.VideoRentalApi;
 
 
-import com.learningjava.expensetrackerapi.Constants;
-import com.learningjava.expensetrackerapi.entity.User;
+import com.learningjava.VideoRentalApi.entity.User;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 
-import javax.xml.crypto.Data;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,6 +24,7 @@ public class TokenHandler {
                 .setExpiration(new Date(timestamp + Constants.TOKEN_VALIDITY))
                 .claim("userId", user.getUserId())
                 .claim("email", user.getEmail())
+                .claim("role", user.getRole())
                 .claim("firstname", user.getFirstName())
                 .claim("lastname", user.getLastName())
                 .compact();

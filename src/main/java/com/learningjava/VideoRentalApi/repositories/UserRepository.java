@@ -1,7 +1,7 @@
-package com.learningjava.expensetrackerapi.repositories;
+package com.learningjava.VideoRentalApi.repositories;
 
-import com.learningjava.expensetrackerapi.entity.User;
-import com.learningjava.expensetrackerapi.exceptions.EtAuthException;
+import com.learningjava.VideoRentalApi.entity.User;
+import com.learningjava.VideoRentalApi.exceptions.EtAuthException;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
