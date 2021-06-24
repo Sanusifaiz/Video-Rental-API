@@ -1,14 +1,10 @@
-package com.learningjava.expensetrackerapi.controller;
+package com.learningjava.VideoRentalApi.controller;
 
 
-import com.learningjava.expensetrackerapi.entity.Category;
-import com.learningjava.expensetrackerapi.entity.User;
-import com.learningjava.expensetrackerapi.services.CategoryServiceImpl;
-import javassist.bytecode.stackmap.BasicBlock;
+import com.learningjava.VideoRentalApi.entity.Category;
+import com.learningjava.VideoRentalApi.services.CategoryServiceImpl;
 import org.aspectj.weaver.ast.Var;
-import org.hibernate.id.GUIDGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +16,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/categories")
-public class CategoriesController {
+public class VideoController {
 
     @Autowired
     CategoryServiceImpl categoryService;

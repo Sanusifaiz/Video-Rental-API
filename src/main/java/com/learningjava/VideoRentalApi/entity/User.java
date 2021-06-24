@@ -1,9 +1,10 @@
-package com.learningjava.expensetrackerapi.entity;
+package com.learningjava.VideoRentalApi.entity;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.id.GUIDGenerator;
 
 import javax.persistence.*;
 
@@ -20,6 +21,8 @@ public class User {
     private Integer userId;
     private String firstName;
     private String lastName;
+    private String PhoneNumber;
+    private String Role;
     private String email;
     private String password;
 }

@@ -1,10 +1,9 @@
-package com.learningjava.expensetrackerapi.controller;
+package com.learningjava.VideoRentalApi.controller;
 
 
-import com.learningjava.expensetrackerapi.TokenHandler;
-import com.learningjava.expensetrackerapi.TokenHandler.*;
-import com.learningjava.expensetrackerapi.entity.User;
-import com.learningjava.expensetrackerapi.services.UserServiceImpl;
+import com.learningjava.VideoRentalApi.TokenHandler;
+import com.learningjava.VideoRentalApi.entity.User;
+import com.learningjava.VideoRentalApi.services.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-import java.util.HashMap;
 import java.util.Map;
 
 @RestController

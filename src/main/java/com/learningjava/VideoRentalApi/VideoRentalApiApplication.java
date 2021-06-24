@@ -1,6 +1,6 @@
-package com.learningjava.expensetrackerapi;
+package com.learningjava.VideoRentalApi;
 
-import com.learningjava.expensetrackerapi.Authentication.AuthFilter;
+import com.learningjava.VideoRentalApi.Authentication.AuthFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
